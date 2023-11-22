@@ -10,8 +10,22 @@ namespace CalculatorTutorial
   {
     static void Main(string[] args)
     {
-      int temp = Int32.Parse(Console.ReadLine());
-      Console.WriteLine(temp);
+      Console.WriteLine("First number:");
+      string firstInput = Console.ReadLine();
+      Console.WriteLine("Second number:");
+      string secondInput = Console.ReadLine();
+
+      int first, second;
+
+      if (int.TryParse(firstInput, out first) && int.TryParse(secondInput, out second))
+      {
+        Console.WriteLine($"Sum: {first + second}");
+      }
+      else
+      {
+        Console.WriteLine("Please, make sure you type only numbers.");
+      }
+
 
     }
   }
