@@ -30,7 +30,7 @@ jobs:
           # For more information regarding Static Web App workflow configurations, please visit: https://aka.ms/swaworkflowconfig
           app_location: "/pizzaapp/ContosoPizza" # App source code path
           api_location: "" # Api source code path - optional
-          output_location: "/pizzaapp/bin"
+          output_location: "/pizzaapp/ContosoPizza/bin"
           app_build_command: "dotnet run build"
 
   close_pull_request_job:
