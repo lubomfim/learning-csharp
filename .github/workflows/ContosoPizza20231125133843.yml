@@ -8,7 +8,7 @@ env:
   AZURE_WEBAPP_PACKAGE_PATH: ContosoPizza\published
   CONFIGURATION: Release
   DOTNET_CORE_VERSION: 7.0.x
-  WORKING_DIRECTORY: ContosoPizza
+  WORKING_DIRECTORY: pizzaapp/ContosoPizza
 jobs:
   build:
     runs-on: windows-latest
